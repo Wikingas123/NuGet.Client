@@ -628,7 +628,7 @@ namespace NuGet.PackageManagement.UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Owner(s): .
+        ///   Looks up a localized string similar to Owner(s):.
         /// </summary>
         public static string Label_Owners {
             get {

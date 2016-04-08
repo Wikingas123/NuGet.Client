@@ -1,8 +1,5 @@
 ﻿{
   "dependencies": {
-    "NuGet.PackageManagement": "3.5.0-*",
-    "NuGet.Protocol.VisualStudio": "3.5.0-*",
-    "NuGet.Common": "3.5.0-*",
     "Microsoft.VisualStudio.Shell.14.0": "14.0.23107",
     "Microsoft.VisualStudio.Shell.Interop": "7.10.6071",
     "Microsoft.VisualStudio.Shell.Interop.10.0": "10.0.30319",
@@ -14,7 +11,7 @@
     "Microsoft.VisualStudio.OLE.Interop": "7.10.6070"
   },
   "frameworks": {
-    "net45": {}
+    "net451": {}
   },
   "runtimes": {
     "win-anycpu": {},

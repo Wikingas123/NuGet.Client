@@ -1,9 +1,8 @@
 ﻿{
   "dependencies": {
-    "NuGet.Protocol.VisualStudio": "3.5.0-*"
   },
   "frameworks": {
-    "net45": {}
+    "net451": {}
   },
   "runtimes": {
     "win-anycpu": {},

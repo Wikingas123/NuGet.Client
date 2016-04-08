@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <NoWarn>1762</NoWarn>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup>
     <ProjectGuid>{7DB43FE1-75E1-49F9-B2C8-06A552BA2144}</ProjectGuid>
@@ -50,6 +51,50 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\NuGet.Core\NuGet.Common\NuGet.Common.xproj">
+      <Project>{98bee375-a5a0-4fc2-9b7a-25db41c8045d}</Project>
+      <Name>NuGet.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NuGet.Core\NuGet.Configuration\NuGet.Configuration.xproj">
+      <Project>{e3ef26e1-80a7-4573-b3a4-1d4b0042616e}</Project>
+      <Name>NuGet.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NuGet.Core\NuGet.Frameworks\NuGet.Frameworks.xproj">
+      <Project>{9a9a9f26-597a-4fa6-a4f1-415063484d9c}</Project>
+      <Name>NuGet.Frameworks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NuGet.Core\NuGet.Packaging.Core.Types\NuGet.Packaging.Core.Types.xproj">
+      <Project>{46275450-3b62-4e89-8f7e-3fe2ee8513d2}</Project>
+      <Name>NuGet.Packaging.Core.Types</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NuGet.Core\NuGet.Packaging.Core\NuGet.Packaging.Core.xproj">
+      <Project>{d65583e4-8084-466a-ba4b-55a797ea047b}</Project>
+      <Name>NuGet.Packaging.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NuGet.Core\NuGet.Packaging\NuGet.Packaging.xproj">
+      <Project>{bd6bbc90-60be-4e7d-8458-91e9cda66abe}</Project>
+      <Name>NuGet.Packaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NuGet.Core\NuGet.Protocol.Core.Types\NuGet.Protocol.Core.Types.xproj">
+      <Project>{37c02980-2278-4494-8ff7-208d8078c21e}</Project>
+      <Name>NuGet.Protocol.Core.Types</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NuGet.Core\NuGet.Protocol.Core.v2\NuGet.Protocol.Core.v2.xproj">
+      <Project>{47120cfb-bafa-4fcc-b35a-ac62907d3af4}</Project>
+      <Name>NuGet.Protocol.Core.v2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NuGet.Core\NuGet.Protocol.Core.v3\NuGet.Protocol.Core.v3.xproj">
+      <Project>{020f4c88-3a5c-4b89-9868-089e867cc223}</Project>
+      <Name>NuGet.Protocol.Core.v3</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NuGet.Core\NuGet.Protocol.VisualStudio\NuGet.Protocol.VisualStudio.xproj">
+      <Project>{de390d30-b8ff-44d7-8411-a4553b38a0b1}</Project>
+      <Name>NuGet.Protocol.VisualStudio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NuGet.Core\NuGet.Versioning\NuGet.Versioning.xproj">
+      <Project>{24e62ab7-64e4-4975-9417-883559d1bc19}</Project>
+      <Name>NuGet.Versioning</Name>
+    </ProjectReference>
     <ProjectReference Include="..\VisualStudio\VisualStudio.csproj">
       <Project>{e5556bc6-a7fd-4d8e-8a7d-7648df1d7471}</Project>
       <Name>VisualStudio</Name>

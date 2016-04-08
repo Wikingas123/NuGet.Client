@@ -115,7 +115,7 @@ namespace NuGet.Credentials {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Credential plugin {0} timed out after {1} milliseconds..
+        ///   Looks up a localized string similar to Credential plugin {0} timed out after {1} seconds..
         /// </summary>
         internal static string PluginException_Timeout_Format {
             get {
@@ -133,7 +133,7 @@ namespace NuGet.Credentials {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to One of the credential providers gave an invalid response.
+        ///   Looks up a localized string similar to Credential provider gave an invalid response..
         /// </summary>
         internal static string ProviderException_MalformedResponse {
             get {
