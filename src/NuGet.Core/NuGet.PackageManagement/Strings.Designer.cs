@@ -132,6 +132,24 @@ namespace NuGet.PackageManagement {
         }
         
         /// <summary>
+        ///    Looks up a localized string similar to Package acquisition complete..
+        /// </summary>
+        internal static string DownloadPackagesEnd {
+            get {
+                return ResourceManager.GetString("DownloadPackagesEnd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to Acquiring new packages if needed..
+        /// </summary>
+        internal static string DownloadPackagesStart {
+            get {
+                return ResourceManager.GetString("DownloadPackagesStart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///    Looks up a localized string similar to Cannot download packages from &apos;{0}&apos;..
         /// </summary>
         internal static string DownloadResourceNotFound {
