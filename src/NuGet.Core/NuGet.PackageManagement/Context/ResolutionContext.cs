@@ -14,12 +14,12 @@ namespace NuGet.PackageManagement
         /// Public constructor to create the resolution context
         /// </summary>
         public ResolutionContext()
+            : this(DependencyBehavior.Lowest,
+                  includePrelease: false,
+                  includeUnlisted: true,
+                  versionConstraints: VersionConstraints.None,
+                  gatherCache: new GatherCache())
         {
-            DependencyBehavior = DependencyBehavior.Lowest;
-            IncludePrerelease = false;
-            IncludeUnlisted = true;
-            VersionConstraints = VersionConstraints.None;
-            GatherCache = new GatherCache();
         }
 
         /// <summary>
@@ -30,12 +30,29 @@ namespace NuGet.PackageManagement
             bool includePrelease,
             bool includeUnlisted,
             VersionConstraints versionConstraints)
+            : this (dependencyBehavior,
+                  includePrelease,
+                  includeUnlisted,
+                  versionConstraints,
+                  new GatherCache())
+        {
+        }
+
+        /// <summary>
+        /// Public constructor to create the resolution context
+        /// </summary>
+        public ResolutionContext(
+            DependencyBehavior dependencyBehavior,
+            bool includePrelease,
+            bool includeUnlisted,
+            VersionConstraints versionConstraints,
+            GatherCache gatherCache)
         {
             DependencyBehavior = dependencyBehavior;
             IncludePrerelease = includePrelease;
             IncludeUnlisted = includeUnlisted;
             VersionConstraints = versionConstraints;
-            GatherCache = new GatherCache();
+            GatherCache = gatherCache ?? new GatherCache();
         }
 
         /// <summary>
