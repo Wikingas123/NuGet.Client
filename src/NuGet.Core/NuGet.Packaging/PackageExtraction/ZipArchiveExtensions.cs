@@ -73,7 +73,7 @@ namespace NuGet.Packaging
                 catch (ArgumentOutOfRangeException ex)
                 {
                     string message = string.Format(
-                        CultureInfo.InvariantCulture,
+                        CultureInfo.CurrentCulture,
                         Strings.FailedFileTime,
                         fileFullPath, // {0}
                         ex.Message); // {1}
