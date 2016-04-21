@@ -29,7 +29,13 @@ namespace NuGet.Packaging.Test
             var actual = tc.Target.GetPackageFilePath(tc.Id, tc.Version);
 
             // Assert
-            Assert.Equal(Path.Combine(tc.PackagesPath, "nuget.packaging", "3.4.3-beta", "nuget.packaging.3.4.3-beta.nupkg"), actual);
+            Assert.Equal(
+                Path.Combine(
+                    tc.PackagesPath,
+                    "nuget.packaging",
+                    "3.4.3-beta",
+                    "nuget.packaging.3.4.3-beta.nupkg"),
+                actual);
         }
 
         [Fact]
@@ -42,7 +48,10 @@ namespace NuGet.Packaging.Test
             var actual = tc.Target.GetManifestFilePath(tc.Id, tc.Version);
 
             // Assert
-            Assert.Equal(Path.Combine(tc.PackagesPath, "nuget.packaging", "3.4.3-beta", "nuget.packaging.nuspec"), actual);
+            Assert.Equal(
+                Path.Combine(
+                    tc.PackagesPath, "nuget.packaging", "3.4.3-beta", "nuget.packaging.nuspec"),
+                actual);
         }
 
         [Fact]
@@ -55,7 +64,13 @@ namespace NuGet.Packaging.Test
             var actual = tc.Target.GetHashPath(tc.Id, tc.Version);
 
             // Assert
-            Assert.Equal(Path.Combine(tc.PackagesPath, "nuget.packaging", "3.4.3-beta", "nuget.packaging.3.4.3-beta.nupkg.sha512"), actual);
+            Assert.Equal(
+                Path.Combine(
+                    tc.PackagesPath,
+                    "nuget.packaging",
+                    "3.4.3-beta",
+                    "nuget.packaging.3.4.3-beta.nupkg.sha512"),
+                actual);
         }
 
         [Fact]
