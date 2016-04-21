@@ -35,7 +35,6 @@ namespace Commands.Test
                     logger,
                     fixNuspecIdCasing: false,
                     packageSaveMode: PackageSaveMode.Defaultv3,
-                    normalizeFileNames: false,
                     xmlDocFileSaveMode: XmlDocFileSaveMode.None);
 
                 // Act
@@ -79,7 +78,6 @@ namespace Commands.Test
                     logger,
                     fixNuspecIdCasing: false,
                     packageSaveMode: PackageSaveMode.Defaultv3,
-                    normalizeFileNames: false,
                     xmlDocFileSaveMode: XmlDocFileSaveMode.None);
 
                 // Act
@@ -122,7 +120,6 @@ namespace Commands.Test
                     logger,
                     fixNuspecIdCasing: false,
                     packageSaveMode: PackageSaveMode.Defaultv3,
-                    normalizeFileNames: false,
                     xmlDocFileSaveMode: XmlDocFileSaveMode.None);
 
                 var packageDir = Path.Combine(packagesDir, package.Id, package.Version);
@@ -175,7 +172,6 @@ namespace Commands.Test
                     logger,
                     fixNuspecIdCasing: false,
                     packageSaveMode: PackageSaveMode.Defaultv3,
-                    normalizeFileNames: false,
                     xmlDocFileSaveMode: XmlDocFileSaveMode.None);
 
                 var packageDir = Path.Combine(packagesDir, package.Id, package.Version);
@@ -233,7 +229,6 @@ namespace Commands.Test
                     logger,
                     fixNuspecIdCasing: false,
                     packageSaveMode: PackageSaveMode.Defaultv3,
-                    normalizeFileNames: false,
                     xmlDocFileSaveMode: XmlDocFileSaveMode.None);
 
                 var packageDir = Path.Combine(packagesDir, package.Id, package.Version);
@@ -289,7 +284,6 @@ namespace Commands.Test
                     logger,
                     fixNuspecIdCasing: false,
                     packageSaveMode: PackageSaveMode.Defaultv3,
-                    normalizeFileNames: false,
                     xmlDocFileSaveMode: XmlDocFileSaveMode.None);
 
                 var packageDir = Path.Combine(packagesDir, package.Id, package.Version);
@@ -355,7 +349,6 @@ namespace Commands.Test
                     NullLogger.Instance,
                     fixNuspecIdCasing: false,
                     packageSaveMode: PackageSaveMode.Defaultv3,
-                    normalizeFileNames: false,
                     xmlDocFileSaveMode: XmlDocFileSaveMode.None);
 
                 // Act
@@ -396,7 +389,6 @@ namespace Commands.Test
                     NullLogger.Instance,
                     fixNuspecIdCasing: false,
                     packageSaveMode: PackageSaveMode.Nuspec | PackageSaveMode.Nupkg,
-                    normalizeFileNames: false,
                     xmlDocFileSaveMode: XmlDocFileSaveMode.None);
 
                 // Act
@@ -435,7 +427,6 @@ namespace Commands.Test
                     NullLogger.Instance,
                     fixNuspecIdCasing: false,
                     packageSaveMode: PackageSaveMode.Nuspec | PackageSaveMode.Nupkg,
-                    normalizeFileNames: true,
                     xmlDocFileSaveMode: XmlDocFileSaveMode.None);
 
                 // Act
@@ -483,7 +474,6 @@ namespace Commands.Test
                     NullLogger.Instance,
                     fixNuspecIdCasing: false,
                     packageSaveMode: PackageSaveMode.Defaultv3,
-                    normalizeFileNames: true,
                     xmlDocFileSaveMode: XmlDocFileSaveMode.None);
 
                 // Act
@@ -539,7 +529,6 @@ namespace Commands.Test
                     NullLogger.Instance,
                     fixNuspecIdCasing: false,
                     packageSaveMode: PackageSaveMode.Defaultv3,
-                    normalizeFileNames: true,
                     xmlDocFileSaveMode: XmlDocFileSaveMode.None);
 
                 // Act
@@ -593,7 +582,6 @@ namespace Commands.Test
                     NullLogger.Instance,
                     fixNuspecIdCasing: false,
                     packageSaveMode: PackageSaveMode.Defaultv3,
-                    normalizeFileNames: true,
                     xmlDocFileSaveMode: XmlDocFileSaveMode.None);
 
                 // Act
@@ -631,7 +619,6 @@ namespace Commands.Test
                     NullLogger.Instance,
                     fixNuspecIdCasing: false,
                     packageSaveMode: PackageSaveMode.Nupkg | PackageSaveMode.Nuspec,
-                    normalizeFileNames: false,
                     xmlDocFileSaveMode: XmlDocFileSaveMode.None);
 
                 // Act

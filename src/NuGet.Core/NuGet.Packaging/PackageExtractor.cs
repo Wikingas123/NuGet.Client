@@ -176,8 +176,7 @@ namespace NuGet.Packaging
                 throw new ArgumentNullException(nameof(versionFolderPathContext));
             }
 
-            var packagePathResolver = new VersionFolderPathResolver(
-                versionFolderPathContext.PackagesDirectory, versionFolderPathContext.NormalizeFileNames);
+            var packagePathResolver = new VersionFolderPathResolver(versionFolderPathContext.PackagesDirectory);
 
             var packageIdentity = versionFolderPathContext.Package;
             var logger = versionFolderPathContext.Logger;

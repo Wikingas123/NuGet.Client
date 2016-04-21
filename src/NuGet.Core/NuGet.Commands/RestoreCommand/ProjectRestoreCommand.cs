@@ -318,7 +318,6 @@ namespace NuGet.Commands
                 _logger,
                 fixNuspecIdCasing: true,
                 packageSaveMode: _request.PackageSaveMode,
-                normalizeFileNames: false,
                 xmlDocFileSaveMode: _request.XmlDocFileSaveMode);
 
             await PackageExtractor.InstallFromSourceAsync(

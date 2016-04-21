@@ -30,9 +30,7 @@ namespace NuGet.Protocol
             }
 
             var globalPackagesFolder = SettingsUtility.GetGlobalPackagesFolder(settings);
-            var defaultPackagePathResolver = new VersionFolderPathResolver(
-                globalPackagesFolder,
-                normalizePackageId: false);
+            var defaultPackagePathResolver = new VersionFolderPathResolver(globalPackagesFolder);
 
             var hashPath = defaultPackagePathResolver.GetHashPath(packageIdentity.Id, packageIdentity.Version);
 
@@ -106,7 +104,6 @@ namespace NuGet.Protocol
                 logger,
                 fixNuspecIdCasing: false,
                 packageSaveMode: PackageSaveMode.Defaultv3,
-                normalizeFileNames: false,
                 xmlDocFileSaveMode: PackageExtractionBehavior.XmlDocFileSaveMode);
 
             await PackageExtractor.InstallFromSourceAsync(

@@ -12,7 +12,6 @@ namespace NuGet.Packaging
         public ILogger Logger { get; }
         public bool FixNuspecIdCasing { get; }
         public PackageSaveMode PackageSaveMode { get; }
-        public bool NormalizeFileNames { get; }
         public XmlDocFileSaveMode XmlDocFileSaveMode { get; set; }
 
         public VersionFolderPathContext(
@@ -21,7 +20,6 @@ namespace NuGet.Packaging
             ILogger logger,
             bool fixNuspecIdCasing,
             PackageSaveMode packageSaveMode,
-            bool normalizeFileNames,
             XmlDocFileSaveMode xmlDocFileSaveMode)
         {
             if (package == null)
@@ -47,7 +45,6 @@ namespace NuGet.Packaging
             Logger = logger;
             FixNuspecIdCasing = fixNuspecIdCasing;
             PackageSaveMode = packageSaveMode;
-            NormalizeFileNames = normalizeFileNames;
             XmlDocFileSaveMode = xmlDocFileSaveMode;
         }
     }

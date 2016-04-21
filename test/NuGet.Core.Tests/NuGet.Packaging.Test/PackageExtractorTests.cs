@@ -666,7 +666,6 @@ namespace NuGet.Packaging.Test
                             NullLogger.Instance,
                             fixNuspecIdCasing: false,
                             packageSaveMode: PackageSaveMode.Nupkg | PackageSaveMode.Files,
-                            normalizeFileNames: false,
                             xmlDocFileSaveMode: XmlDocFileSaveMode.None),
                         CancellationToken.None);
 
@@ -702,7 +701,6 @@ namespace NuGet.Packaging.Test
                             NullLogger.Instance,
                             fixNuspecIdCasing: false,
                             packageSaveMode: PackageSaveMode.Nuspec | PackageSaveMode.Files,
-                            normalizeFileNames: false,
                             xmlDocFileSaveMode: XmlDocFileSaveMode.None),
                         CancellationToken.None);
 
@@ -739,7 +737,6 @@ namespace NuGet.Packaging.Test
                             NullLogger.Instance,
                             fixNuspecIdCasing: false,
                             packageSaveMode: PackageSaveMode.Nupkg | PackageSaveMode.Nuspec,
-                            normalizeFileNames: false,
                             xmlDocFileSaveMode: XmlDocFileSaveMode.None),
                         CancellationToken.None);
 
